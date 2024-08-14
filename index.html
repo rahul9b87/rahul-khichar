@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Calculator</title>
+    <link rel="stylesheet" href="index_styles.css">
+</head>
+<body>
+    <header>
+        <img src="pulkit.png" alt="Pulkit">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/rahulchoudhary_99/"><img src="insta.jpg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/rahul-khichar-2106bb292/"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/rahul9b87"><img src="git.png" alt="GitHub"></a>
+            <!-- Google Search Bar -->
+            <form action="https://www.google.com/search" method="get">
+                <input type="text" name="q" placeholder="Search Google..." required>
+                <button type="submit">Search</button>
+            </form>
+            <!-- ChatGPT Search Bar -->
+            <form action="https://chat.openai.com/" method="get">
+                <input type="text" name="q" placeholder="Search ChatGPT..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-me-icon">
+            <a href="about.html"><img src="about_me.png" alt="About Me"></a>
+        </section>
+    </main>
+
+    <footer>
+        <img src="calc.png" alt="Calculator" onclick="openCalculator()">
+    </footer>
+
+    <script>
+        function openCalculator() {
+            window.location.href = 'calculator.html';
+        }
+    </script>
+</body>
+</html>

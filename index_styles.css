@@ -1,0 +1,177 @@
+/* index_styles.css */
+
+/* Basic resets */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    height: 60px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-left: 15px;
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.social-icons form {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.social-icons input[type="text"] {
+    padding: 10px 15px;
+    width: 200px;
+    border: 2px solid #555;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    transition: width 0.4s ease, box-shadow 0.4s ease;
+    background-color: #222;
+    color: white;
+}
+
+.social-icons input[type="text"]::placeholder {
+    color: #bbb;
+    font-style: italic;
+}
+
+.social-icons input[type="text"]:focus {
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 150, 255, 0.7);
+}
+
+.social-icons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 150, 255, 0.5);
+}
+
+.social-icons button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 150, 255, 0.3);
+}
+
+/* About Me section */
+main {
+    padding: 20px;
+}
+
+.about-me {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-me-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-me-info {
+    max-width: 600px;
+}
+
+.about-me-info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about-me-info p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.about-me-info a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about-me-info a:hover {
+    color: #0056b3;
+}
+
+.about-me-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-me-info ul li {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer img {
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow
